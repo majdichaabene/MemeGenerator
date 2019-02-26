@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/item_container_lay">
+
+            <ImageView
+                android:id="@+id/meme_img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/name_txt"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/meme_img" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/total_vote_txt"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_txt" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

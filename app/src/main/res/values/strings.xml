@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MG</string>
+    <string name="cancel_button">cancel</string>
+    <string name="done_button">done</string>
+    <string name="back_button">back</string>
+    <string name="share_button">share</string>
+    <string name="save_button">save</string>
+    <string name="clear_button">clear</string>
+</resources>
